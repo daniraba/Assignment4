@@ -87,7 +87,7 @@ public class Assignment4 {
         graph.dfs();
         long endTime = System.nanoTime();
 
-        // Display discovery and finishing times
+        // Discovery and finishing times
         graph.displayTimes();
 
         // Display running time
