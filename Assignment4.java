@@ -65,9 +65,9 @@ public class Assignment4 {
 
     // Discovery and finishing times
     public void displayTimes() {
-        System.out.println("Node\tDiscovery\tFinishing");
-        for (int i = 0; i < numNodes; i++) {
-            System.out.println(i + "\t" + discovery[i] + "\t\t" + finishing[i]);
+        System.out.println("Node\tDiscovery\tFinishing"); // Three columns to display node, discovery, and finishing
+        for (int i = 0; i < numNodes; i++) { // Iterate through the nodes
+            System.out.println(i + "\t" + discovery[i] + "\t\t" + finishing[i]); // Output the values
         }
     }
 
