@@ -1,5 +1,21 @@
 import java.util.*;
 
+/*
+ * Daniella R. & Daisy M.
+ * 
+ *              |E| = |V| -1    |E| = [(|V| -1) 3/2]  |E| = (|V| -1)^2
+ * |V| = 10     0.072958 ms     0.098541 ms            0.10025 ms
+ * |V| = 100    0.107875 ms     0.2705 ms              0.782667 ms
+ * |V| = 1000   0.501041 ms     2.183917 ms            38.634458 ms
+ *
+ * Approximate Formula: T(V, E) = 0.00044 * V + 0.000038 * E (in ms)
+ * 
+ * We used got the constant by solving system of equations using the largest
+ * and middle values of V and E. For example, for |V| = 1000 and |E| = 998001, 
+ * which is T = 0.00044*1000 + 0.000038*998001 = 38.7ms which matches.
+ * This confirms the formula O(V + E) complexity.
+ */ 
+
 public class Assignment4 {
     private int numNodes;
     private LinkedList<Integer>[] adjList;
